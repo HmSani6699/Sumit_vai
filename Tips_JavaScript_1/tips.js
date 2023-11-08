@@ -25,3 +25,17 @@ function handleCopyBtn() {
   document.execCommand("copy");
   document.body.removeChild(element);
 }
+
+//  ========================= destructturing aliases =========================//
+
+const obj = {
+  id: "222",
+  name: "Abol Kalam Ajad",
+  age: "20",
+  address: "Namapara",
+  city: "Dahaka",
+};
+
+const { id: numver, age: code } = obj;
+
+// console.log(numver, code);
