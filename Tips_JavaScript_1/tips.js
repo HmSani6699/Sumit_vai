@@ -51,4 +51,11 @@ for (let i = 0; i < aa.length; i++) {
   }
 }
 
+// console.log(largeNumber);
+
+let bb = aa.filter((item) => {
+  if (largeNumber < item) largeNumber = item;
+  return largeNumber;
+});
+
 console.log(largeNumber);
