@@ -40,22 +40,23 @@ const { id: numver, age: code } = obj;
 
 // console.log(numver, code);
 
-const aa = [0, 1, 2, 3, 4, 5];
+const aa = [0, 40, 1, 2, 3, 4, 33, 55];
 // console.log(aa);
 
 let largeNumber = 0;
 
-for (let i = 0; i < aa.length; i++) {
-  if (largeNumber < aa[i]) {
-    largeNumber = aa[i];
-  }
-}
+// for (let i = 0; i < aa.length; i++) {
+//   if (largeNumber < aa[i]) {
+//     largeNumber = aa[i];
+//   }
+// }
 
 // console.log(largeNumber);
 
-let bb = aa.filter((item) => {
-  if (largeNumber < item) largeNumber = item;
-  return largeNumber;
-});
+const arr = [111, 20, 35, 4, 5];
+console.log(arr);
 
-console.log(largeNumber);
+const second = arr.sort((a, b) => a - b);
+const secondLarge = [...new Set(second)];
+
+console.log(secondLarge[arr.length - 2]);
