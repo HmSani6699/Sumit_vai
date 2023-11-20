@@ -39,3 +39,16 @@ const obj = {
 const { id: numver, age: code } = obj;
 
 // console.log(numver, code);
+
+const aa = [0, 1, 2, 3, 4, 5];
+// console.log(aa);
+
+let largeNumber = 0;
+
+for (let i = 0; i < aa.length; i++) {
+  if (largeNumber < aa[i]) {
+    largeNumber = aa[i];
+  }
+}
+
+console.log(largeNumber);
